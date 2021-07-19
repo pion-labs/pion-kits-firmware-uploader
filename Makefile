@@ -9,7 +9,7 @@ build: venv
 	@echo "creating Application..."
 	. venv/bin/activate; \
 	pip install -U pyinstaller; \
-	pyinstaller --console --onefile --name=pionUploader pionUploader.py;
+	pyinstaller --console --windowed --onefile --name=pionUploader pionUploader.py --icon=/images/pion.ico;
 
 clean: 
 	@echo "cleaning..."
